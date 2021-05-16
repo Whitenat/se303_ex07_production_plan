@@ -57,7 +57,14 @@ class ProvinceTest < Minitest::Test
   	asia.demand = -1
   	assert_equal(-26, asia.shortfall)
   	assert_equal(-10, asia.profit)
-
   end
+
+#######IDK man... Ruby doesn't like this#####
+  # def test_empty_string_demand
+  # 	asia = Province.new(sample_province_data)
+  # 	asia.demand = ""
+  # 	assert_equal(nil, asia.shortfall)
+  # 	assert_equal(nil, asia.profit)
+  # end
 
 end
